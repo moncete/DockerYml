@@ -1,0 +1,12 @@
+docker-nfs:
+ image: cpuguy83/nfs-server
+ privileged: true
+ net: host
+ volumes:
+ - /exports
+ command:
+ - /exports
+ - /etc/services:/etc/services
+ 
+ 
+ 
